@@ -180,5 +180,5 @@ plotly
 
 ---
 
-**Author(s):** Team 5 — Data Science Class Project
+**Author(s):** Team 15 — DSI Final Project
 **Dataset Credit:** [Kaggle: Customer Purchasing Behaviors](https://www.kaggle.com/datasets/hanaksoy/customer-purchasing-behaviors/data)
