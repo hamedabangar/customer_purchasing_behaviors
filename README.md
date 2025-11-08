@@ -53,6 +53,8 @@ The dataset contains **238 observations** and **7 variables**, each representing
 
 ### 2. Exploratory Data Analysis (EDA)
 
+For more thorough results, see [EDA](EDA)
+
 * Visualize distributions and pairwise relationships
 * Analyze correlation between income, spending, and frequency
 * Identify potential grouping patterns
