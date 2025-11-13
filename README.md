@@ -145,13 +145,13 @@ plotly
 
 ## 👥 Team Members
 
-| Name     | Role                                    |
+| Name     |                                   |
 | -------- | --------------------------------------- |
-| Member 1 | Data preprocessing, feature engineering |
-| Member 2 | Exploratory Data Analysis               |
-| Member 3 | Modeling and evaluation                 |
-| Member 4 | Business analysis & visualization       |
-| Member 5 | Documentation & presentation            |
+| Sunbal Cheema |
+| Karmali Karmali |
+| Hamed Abangar |
+| Kyuhwan Kim | 
+| Thomas Schaefer | 
 
 ---
 
@@ -184,3 +184,9 @@ plotly
 
 **Author(s):** Team 15 — DSI Final Project
 **Dataset Credit:** [Kaggle: Customer Purchasing Behaviors](https://www.kaggle.com/datasets/hanaksoy/customer-purchasing-behaviors/data)
+
+---
+
+**Reflection videos**
+
+Links to be shared here
