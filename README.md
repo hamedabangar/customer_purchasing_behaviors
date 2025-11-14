@@ -45,32 +45,34 @@ The dataset contains **238 observations** and **7 variables**, each representing
 
 ## 🧭 Methodology
 
-### 1. Data Preprocessing
+### 1. [Data Preprocessing](src\Data_Preprocessing.ipynb)
+
+
 
 * Handle missing values and outliers
 * Encode categorical features (e.g., Gender, Product Category)
 * Standardize numerical variables for clustering
 
-### 2. Exploratory Data Analysis (EDA)
-
-For more thorough results, see [EDA](EDA)
+### 2. [Exploratory Data Analysis (EDA)](EDA\EDA.ipynb)
 
 * Visualize distributions and pairwise relationships
 * Analyze correlation between income, spending, and frequency
 * Identify potential grouping patterns
 
-### 3. Clustering
+### 3. [Clustering](models\CustPrchBehvr_KMeans.ipynb)
+
+
 
 We apply **K-Means Clustering** to segment customers based on demographic and behavioral similarities.
 
 * Use **Elbow Method** and **Silhouette Score** to determine the optimal number of clusters
 * Visualize clusters using PCA for dimensionality reduction
 
-### 4. Predictive Modeling
+### 4. [Predictive Modeling](src\Predictive_Modeling.ipynb)
 
-Once clusters are defined, we use **classification techniques** (e.g., Logistic Regression, Random Forest) to predict **future purchasing behavior** and cluster membership for new customers.
+Once clusters are defined, we use **classification techniques** (e.g., Logistic Regression, Random Forest) to predict **cluster membership** for new customers.
 
-### 5. Evaluation
+### 5. [Evaluation](src\Evaluation.ipynb)
 
 * Cluster compactness and separation metrics
 * Predictive accuracy for classification models
@@ -78,16 +80,32 @@ Once clusters are defined, we use **classification techniques** (e.g., Logistic 
 
 ---
 
-## 💡 Key Insights (Expected Outcomes)
+## 💡 [Key Insights](src\Key_Insights.ipynb)
 
-* Identification of distinct customer personas (e.g., high-value loyalists, budget-conscious buyers, occasional shoppers)
-* Understanding which demographic or behavioral traits drive spending and frequency
+* We have identified 6 distinct personas for segmentation and marketing purposes
+* Through our predictive modeling we are able to determine that past behavior is the strongest predictor of a segment.
+
+* Loyalty Score, Purchase Amount & Frequency and Annual Income & Age are the key drivers.
+
 * High-level strategic recommendations for:
 
   * **Personalization:** Tailored marketing campaigns per segment
   * **Expansion:** Identifying customer clusters underserved in current store locations
 
 ---
+
+## Conclusion
+
+The customer segmentation analysis successfully identified six distinct personas, each with unique behaviors and needs. By understanding these segments, the business can move from a one-size-fits-all approach to a highly personalized strategy.
+
+The key drivers of customer value are loyalty, purchase amount, and frequency, while regional analysis points to clear opportunities for targeted expansion.
+
+By implementing these data-driven recommendations, the business can enhance customer satisfaction, improve marketing ROI, and make smarter decisions about future growth.
+
+
+---
+
+
 
 ## ⚙️ Environment Setup
 
@@ -117,31 +135,6 @@ plotly
 
 ---
 
-## 🚀 How to Run
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/hamedabangar/customer_purchasing_behaviors
-   ```
-2. Navigate to the project directory:
-
-   ```bash
-   cd customer-purchasing-behaviour
-   ```
-3. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Launch the notebook:
-
-   ```bash
-   jupyter notebook
-   ```
-5. Open `Customer_Purchasing_Behaviour.ipynb` and run all cells.
-
----
 
 ## 👥 Team Members
 
@@ -167,15 +160,22 @@ plotly
 ## 📎 Repository Structure
 
 ```
-├── data/
+├── data/raw
 │   └── customer_purchasing_behaviors.csv
-├── notebooks/
-│   └── Customer_Purchasing_Behaviour.ipynb
-├── requirements.txt
+├── EDA/
+│   └── EDA.ipynb
+├── models
+│   └── CustPrchBehvr_KMeans.ipynb
+│── reports
+│   └── cluster_comparison.jpg
+│   └── Radar_chart.jpg
+│── src
+│   └── Data_Preprocessing.ipynb
+│   └── Evaluation.ipynb
+│   └── Key_Insights.ipynb
+│   └── Predictive_Modeling.ipynb
 ├── README.md
-└── visuals/
-    ├── cluster_visualization.png
-    └── correlation_matrix.png
+
 ```
 
 ---
