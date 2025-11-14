@@ -19,6 +19,8 @@ This folder holds the processed (cleaned and transformed) version of our custome
 
 **Scaling:** All numbers were standardized (so they’re on a similar scale) to improve model accuracy and fairness.
 
+**Duplicate Data:** Any users who appeared more than once were removed, so each record is unique.
+
 # Processed Dataset Files
 customer_purchasing_behaviors_processed.csv: This is the cleaned dataset we use for all our analysis and machine learning work.
 
