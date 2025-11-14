@@ -34,8 +34,8 @@ The dataset contains **238 observations** and **7 variables**, each representing
 | age                | Age of the customer                                       |
 | purchase_amount             | The total amount of purchases made by the customer (in USD)                                    |
 | annual_income      | Annual income of the customer (USD)                       |
-| loyalty_score     | A score assigned by the retailer based on spending habits |
-| purchase_frequency | Number of purchases made over a given period              |
+| loyalty_score     | A score assigned based on spending habits |
+| purchase_frequency | Number of purchases made per year              |
 | region   | Region where customer lives                           |
 
 **Data Source:** Kaggle — *Customer Purchasing Behaviors Dataset*
@@ -50,8 +50,8 @@ The dataset contains **238 observations** and **7 variables**, each representing
 
 
 * Handle missing values and outliers
-* Encode categorical features (e.g., Gender, Product Category)
-* Standardize numerical variables for clustering
+* Encode the region categorical feature using one-hot encoding
+* Scale numeric features: age, annual_income, purchase_amount, purchase_frequency, loyalty_score
 
 ### 2. [Exploratory Data Analysis (EDA)](EDA\EDA.ipynb)
 
@@ -63,7 +63,7 @@ The dataset contains **238 observations** and **7 variables**, each representing
 
 
 
-We apply **K-Means Clustering** to segment customers based on demographic and behavioral similarities.
+We apply **K-Means Clustering** to segment customers based on demographic and behavioral similarities. We experimented with K in the range 2–10 and selected K = 6 based on a trade-off between the elbow in the inertia curve and peak silhouette score.
 
 * Use **Elbow Method** and **Silhouette Score** to determine the optimal number of clusters
 * Visualize clusters using PCA for dimensionality reduction
@@ -82,15 +82,18 @@ Once clusters are defined, we use **classification techniques** (e.g., Logistic 
 
 ## 💡 [Key Insights](src\Key_Insights.ipynb)
 
-* We have identified 6 distinct personas for segmentation and marketing purposes
+* We have identified 6 distinct customer personas for segmentation and marketing purposes
+   * Cluster 0 is the most valuable and shows the highest average purchase amount (~$600) and loyalty score (~9)
+   * Cluster 4 being the youngest with a average age of ~24 and the lowest purchase amount (~$168)
 * Through our predictive modeling we are able to determine that past behavior is the strongest predictor of a segment.
 
-* Loyalty Score, Purchase Amount & Frequency and Annual Income & Age are the key drivers.
+* Business implications:
 
-* High-level strategic recommendations for:
+   * Personalization strategies can target high-value clusters with loyalty rewards
 
-  * **Personalization:** Tailored marketing campaigns per segment
-  * **Expansion:** Identifying customer clusters underserved in current store locations
+   * Low-frequency groups present opportunities for reactivation campaigns
+
+   * Certain regions show strong spending behavior → candidates for store expansion
 
 ---
 
@@ -134,6 +137,38 @@ plotly
 ```
 
 ---
+
+## ▶️ How to Run the Project
+
+1. Clone the repo:
+
+```
+git clone https://github.com/hamedabangar/customer_purchasing_behaviors.git
+cd customer_purchasing_behaviors
+```
+
+
+
+Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+Run notebooks in the following order:
+
+1. src/Data_Preprocessing.ipynb
+
+2. EDA/EDA.ipynb
+
+3. models/CustPrchBehvr_KMeans.ipynb
+
+4. src/Predictive_Modeling.ipynb
+
+5. src/Evaluation.ipynb
+
+6. src/Key_Insights.ipynb
+
+
 
 
 ## 👥 Team Members
