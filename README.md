@@ -45,7 +45,7 @@ The dataset contains **238 observations** and **7 variables**, each representing
 
 ## 🧭 Methodology
 
-### 1. [Data Preprocessing](src\Data_Preprocessing.ipynb)
+### 1. [Data Preprocessing](src/Data_Preprocessing.ipynb)
 
 
 
