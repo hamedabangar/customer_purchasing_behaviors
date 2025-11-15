@@ -28,34 +28,35 @@ By identifying natural customer clusters and predicting their purchasing tendenc
 
 **Primary stakeholders:**
 - Retail store managers who will use cluster insights to tailor promotions and optimize inventory
-- - Marketing teams responsible for developing targeted campaigns based on customer segment profiles
-  - - Customer insights analysts who will interpret and apply the segmentation results
+- Marketing teams responsible for developing targeted campaigns based on customer segment profiles
+- Customer insights analysts who will interpret and apply the segmentation results
    
-    - **Secondary stakeholders:**
-    - - Regional sales directors planning expansion strategies
-      - - Product development teams aligning offerings with customer preferences
+**Secondary stakeholders:**
+- Regional sales directors planning expansion strategies
+- Product development teams aligning offerings with customer preferences
        
-        - **Value to stakeholders:** Store managers will use cluster insights to tailor promotions and optimize inventory. Marketing teams will leverage segment profiles for targeted campaigns. Regional directors will use purchasing behavior patterns and regional analysis to identify optimal locations for store expansion.
+**Value to stakeholders:** 
+Store managers will use cluster insights to tailor promotions and optimize inventory. Marketing teams will leverage segment profiles for targeted campaigns. Regional directors will use purchasing behavior patterns and regional analysis to identify optimal locations for store expansion.
        
-        - ## ⚠️ Risks and Unknowns
+## ⚠️ Risks and Unknowns
        
-        - **Data limitations:**
-        - - Limited historical depth (238 observations) may not capture seasonal trends or long-term behavioral shifts
-          - - Dataset lacks temporal information, preventing time-series analysis of customer behavior changes
+**Data limitations:**
+- Limited historical depth (238 observations) may not capture seasonal trends or long-term behavioral shifts
+- Dataset lacks temporal information, preventing time-series analysis of customer behavior changes
            
-            - **Model limitations:**
-            - - K-Means assumes spherical clusters, which may not reflect real customer groupings
-              - - Clustering results depend on feature scaling and may be sensitive to outliers despite preprocessing
-                - - Optimal number of clusters (K=6) is based on metrics but requires business validation
+**Model limitations:**
+- K-Means assumes spherical clusters, which may not reflect real customer groupings
+- Clustering results depend on feature scaling and may be sensitive to outliers despite preprocessing
+- Optimal number of clusters (K=6) is based on metrics but requires business validation
                  
-                  - **Business risks:**
-                  - - Segment interpretations require domain expertise to validate business relevance
-                    - - External factors (market changes, economic conditions, new competitors) not reflected in current data
-                      - - Regional patterns may shift due to demographic changes or local market dynamics
+**Business risks:**
+- Segment interpretations require domain expertise to validate business relevance
+- External factors (market changes, economic conditions, new competitors) not reflected in current data
+- Regional patterns may shift due to demographic changes or local market dynamics
                        
-                        - **Implementation considerations:**
-                        - - Model will require periodic retraining as customer behaviors evolve
-                          - - Prediction accuracy for new customers depends on how well they match existing segment patterns
+**Implementation considerations:**
+- Model will require periodic retraining as customer behaviors evolve
+- Prediction accuracy for new customers depends on how well they match existing segment patterns
 
 ---
 
@@ -230,21 +231,43 @@ Run notebooks in the following order:
 ## 📎 Repository Structure
 
 ```
-├── data/raw
-│   └── customer_purchasing_behaviors.csv
-├── EDA/
-│   └── EDA.ipynb
-├── models
-│   └── CustPrchBehvr_KMeans.ipynb
-│── reports
-│   └── cluster_comparison.jpg
-│   └── Radar_chart.jpg
-│── src
-│   └── Data_Preprocessing.ipynb
-│   └── Evaluation.ipynb
-│   └── Key_Insights.ipynb
-│   └── Predictive_Modeling.ipynb
-├── README.md
+customer_purchasing_behaviors/
+├── README.md (updated)
+├── requirements.txt (new)
+│
+├── data/
+│   ├── raw/
+│   │   └── customer_purchasing_behaviors.csv
+│   └── processed/
+│       └── customer_purchasing_behaviors_processed.csv
+│
+├── notebooks/
+│   ├── 01_data_preprocessing/
+│   │   └── Data_Preprocessing.ipynb
+│   ├── 02_exploratory_analysis/
+│   │   └── EDA.ipynb
+│   ├── 03_clustering/
+│   │   └── KMeans_Clustering.ipynb
+│   ├── 04_predictive_modeling/
+│   │   └── Predictive_Modeling.ipynb
+│   ├── 05_evaluation/
+│   │   └── Evaluation.ipynb
+│   └── 06_insights/
+│       └── Key_Insights.ipynb
+│
+├── outputs/
+│   ├── figures/
+│   │   ├── cluster_comparison.jpg
+│   │   ├── Radar_chart.jpg
+│   │   └── (other visualizations)
+│   └── models/
+│       └── (saved model files .pkl)
+│
+└── archive/
+    └── experiments/
+        ├── Customer Purchasing Behaviours.ipynb
+        ├── EDA.ipynb
+        └── README.md
 
 ```
 
