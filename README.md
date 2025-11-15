@@ -231,24 +231,43 @@ Run notebooks in the following order:
 ## 📎 Repository Structure
 
 ```
-├── data/processed
-│   └── customer_purchasing_behaviors_processed.csv
-|   └── README.md
-├── data/raw
-│   └── customer_purchasing_behaviors.csv
-├── EDA/
-│   └── EDA.ipynb
-├── models
-│   └── CustPrchBehvr_KMeans.ipynb
-│── reports
-│   └── cluster_comparison.jpg
-│   └── Radar_chart.jpg
-│── src
-│   └── Data_Preprocessing.ipynb
-│   └── Evaluation.ipynb
-│   └── Key_Insights.ipynb
-│   └── Predictive_Modeling.ipynb
-├── README.md
+customer_purchasing_behaviors/
+├── README.md (updated)
+├── requirements.txt (new)
+│
+├── data/
+│   ├── raw/
+│   │   └── customer_purchasing_behaviors.csv
+│   └── processed/
+│       └── customer_purchasing_behaviors_processed.csv
+│
+├── notebooks/
+│   ├── 01_data_preprocessing/
+│   │   └── Data_Preprocessing.ipynb
+│   ├── 02_exploratory_analysis/
+│   │   └── EDA.ipynb
+│   ├── 03_clustering/
+│   │   └── KMeans_Clustering.ipynb
+│   ├── 04_predictive_modeling/
+│   │   └── Predictive_Modeling.ipynb
+│   ├── 05_evaluation/
+│   │   └── Evaluation.ipynb
+│   └── 06_insights/
+│       └── Key_Insights.ipynb
+│
+├── outputs/
+│   ├── figures/
+│   │   ├── cluster_comparison.jpg
+│   │   ├── Radar_chart.jpg
+│   │   └── (other visualizations)
+│   └── models/
+│       └── (saved model files .pkl)
+│
+└── archive/
+    └── experiments/
+        ├── Customer Purchasing Behaviours.ipynb
+        ├── EDA.ipynb
+        └── README.md
 
 ```
 
