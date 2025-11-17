@@ -81,7 +81,7 @@ The dataset contains **238 observations** and **7 variables**, each representing
 
 ## 🧭 Methodology
 
-### 1. [Data Preprocessing](src/Data_Preprocessing.ipynb)
+### 1. [Data Preprocessing](notebooks/01_data_preprocessing/Data_Preprocessing.ipynb)
 
 
 
@@ -89,13 +89,13 @@ The dataset contains **238 observations** and **7 variables**, each representing
 * Encode the region categorical feature using one-hot encoding
 * Scale numeric features: age, annual_income, purchase_amount, purchase_frequency, loyalty_score
 
-### 2. [Exploratory Data Analysis (EDA)](EDA/EDA.ipynb)
+### 2. [Exploratory Data Analysis (EDA)](notebooks/02_exploratory_analysis/EDA.ipynb)
 
 * Visualize distributions and pairwise relationships
 * Analyze correlation between income, spending, and frequency
 * Identify potential grouping patterns
 
-### 3. [Clustering](models/CustPrchBehvr_KMeans.ipynb)
+### 3. [Clustering](notebooks/03_clustering/KMeans_Clustering.ipynb)
 
 
 
@@ -104,11 +104,11 @@ We apply **K-Means Clustering** to segment customers based on demographic and be
 * Use **Elbow Method** and **Silhouette Score** to determine the optimal number of clusters
 * Visualize clusters using PCA for dimensionality reduction
 
-### 4. [Predictive Modeling](src/Predictive_Modeling.ipynb)
+### 4. [Predictive Modeling](notebooks/04_predictive_modeling/Predictive_Modeling.ipynb)
 
 Once clusters are defined, we use **classification techniques** (e.g., Logistic Regression, Random Forest) to predict **cluster membership** for new customers.
 
-### 5. [Evaluation](src/Evaluation.ipynb)
+### 5. [Evaluation](notebooks/05_evaluation/Evaluation.ipynb)
 
 * Cluster compactness and separation metrics
 * Predictive accuracy for classification models
@@ -116,7 +116,7 @@ Once clusters are defined, we use **classification techniques** (e.g., Logistic 
 
 ---
 
-## 💡 [Key Insights](src/Key_Insights.ipynb)
+## 💡 [Key Insights](notebooks/06_insights/Key_Insights.ipynb)
 
 * We have identified 6 distinct customer personas for segmentation and marketing purposes
    * Cluster 0 is the most valuable and shows the highest average purchase amount (~$600) and loyalty score (~9)
