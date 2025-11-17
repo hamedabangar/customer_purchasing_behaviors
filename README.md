@@ -282,4 +282,6 @@ customer_purchasing_behaviors/
 
 **Reflection videos**
 
+[Thomas Schaefer](https://drive.google.com/file/d/1OUTO7ZNJfhm6WlPROtkE8D8tjP-9y67h/view?usp=sharing)
+
 Links to be shared here
