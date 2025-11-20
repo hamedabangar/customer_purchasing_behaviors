@@ -235,11 +235,12 @@ customer_purchasing_behaviors/
 ├── README.md (updated)
 ├── requirements.txt (new)
 │
-├── data/
-│   ├── raw/
-│   │   └── customer_purchasing_behaviors.csv
-│   └── processed/
-│       └── customer_purchasing_behaviors_processed.csv
+├── src
+|   ├── data/
+│      ├── raw/
+│      │   └── customer_purchasing_behaviors.csv
+│      └── processed/
+│          └── customer_purchasing_behaviors_processed.csv
 │
 ├── notebooks/
 │   ├── 01_data_preprocessing/
