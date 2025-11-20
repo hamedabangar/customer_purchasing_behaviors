@@ -286,4 +286,6 @@ customer_purchasing_behaviors/
 
 [Hamed Abangar](https://drive.google.com/file/d/1xs5zNks-W4k4M_NSRt1lG774OxyIdfvZ/view?usp=drive_link)
 
+[Kyuhwan Kim](https://www.youtube.com/watch?v=z1aeBickB7E&t=39s)
+
 Links to be shared here
