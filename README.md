@@ -236,11 +236,11 @@ customer_purchasing_behaviors/
 ├── requirements.txt (new)
 │
 ├── src
-|   ├── data/
-│      ├── raw/
-│      │   └── customer_purchasing_behaviors.csv
-│      └── processed/
-│          └── customer_purchasing_behaviors_processed.csv
+|   └── data/
+│       ├── raw/
+│       │   └── customer_purchasing_behaviors.csv
+│       └── processed/
+│           └── customer_purchasing_behaviors_processed.csv
 │
 ├── notebooks/
 │   ├── 01_data_preprocessing/
