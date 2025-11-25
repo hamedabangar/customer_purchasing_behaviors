@@ -288,4 +288,6 @@ customer_purchasing_behaviors/
 
 [Kyuhwan Kim](https://www.youtube.com/watch?v=z1aeBickB7E&t=39s)
 
+[Karmali Karmali](https://drive.google.com/file/d/1YiqTM8SsBwq3KpXtl9Y1cCFkxk1wR_pk/view?usp=sharing)
+
 Links to be shared here
